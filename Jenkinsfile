@@ -12,7 +12,7 @@ pipeline {
         sh 'java -version'
       }
     }
-    stage('Deploy') {
+    /*stage('Deploy') {
       options {
         timeout(time: 30, unit: 'SECONDS') 
       }
@@ -26,7 +26,7 @@ pipeline {
       steps {
         echo "Deploying ${APP_VERSION}."
       }
-    }
+    }*/
   }
   environment {
     MY_NAME = 'JENKINS'
